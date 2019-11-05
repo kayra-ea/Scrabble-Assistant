@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ScrabbleForm">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="600" height="400"/>
+    </constraints>
+    <properties>
+      <maximumSize width="600" height="300"/>
+      <minimumSize width="600" height="400"/>
+      <preferredSize width="600" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="4d862" binding="OutputPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="220" height="300"/>
+            <preferred-size width="220" height="300"/>
+            <maximum-size width="220" height="300"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d0863" class="javax.swing.JLabel" binding="WordsLbl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="14" style="1"/>
+              <text value="You can play:"/>
+            </properties>
+          </component>
+          <scrollpane id="55e29" binding="WordsPane">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="220" height="260"/>
+                <preferred-size width="220" height="260"/>
+                <maximum-size width="220" height="260"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="41243" class="javax.swing.JTextArea" binding="OutputArea" default-binding="true">
+                <constraints/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="7d578" binding="InputPanel" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="330" height="300"/>
+            <preferred-size width="330" height="300"/>
+            <maximum-size width="330" height="300"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="23f37" class="javax.swing.JLabel" binding="InputLbl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="24" style="1"/>
+              <text value="Enter Your Letters"/>
+            </properties>
+          </component>
+          <component id="6f58e" class="javax.swing.JTextField" binding="InputFld">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f13a9" class="javax.swing.JLabel" binding="LettersLbl">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="300" height="-1"/>
+                <preferred-size width="300" height="-1"/>
+                <maximum-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="14" style="1"/>
+              <text value="Your Letters Are: []"/>
+            </properties>
+          </component>
+          <component id="93dd7" class="javax.swing.JLabel" binding="WarningLbl">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="0" height="20"/>
+                <preferred-size width="260" height="20"/>
+                <maximum-size width="260" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Monaco" size="14" style="1"/>
+              <foreground color="-4521968"/>
+              <text value="TRY AGAIN"/>
+            </properties>
+          </component>
+          <component id="5b9e0" class="javax.swing.JRadioButton" binding="HSRBtn">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Highest Score"/>
+            </properties>
+          </component>
+          <component id="6b3e" class="javax.swing.JButton" binding="GenBtn">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Generate"/>
+            </properties>
+          </component>
+          <component id="72395" class="javax.swing.JRadioButton" binding="LengthRBtn">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Longest Length"/>
+            </properties>
+          </component>
+          <component id="9a0de" class="javax.swing.JRadioButton" binding="AlphaRBtn">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Alphabetical Order"/>
+            </properties>
+          </component>
+          <component id="8aada" class="javax.swing.JButton" binding="ClearBtn">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Clear"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup">
+      <member id="5b9e0"/>
+      <member id="72395"/>
+      <member id="9a0de"/>
+    </group>
+  </buttonGroups>
+</form>
