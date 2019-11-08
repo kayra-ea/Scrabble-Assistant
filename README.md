@@ -1,5 +1,7 @@
 # Scrabble-Assistant
 
+(Feb 2018)
+
 Scrabble-Assistant is a program written in Java that helps you always win scrabble against your friends.
 
 ## About
